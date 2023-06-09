@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>SPLI <span>TTER</span></h1>
+    <main>
+      <div>
+      <section >
+        <div class="bill-input-con">
+          <div class="label-con">
+            <label> Bill </label>
+            <p id="error-msg1" class="error"></p>
+          </div>
+          <div class="bill-input">
+            <input type="number" placeholder="142.55" id="pre-bill" />
+            <img src="/images/icon-dollar.svg" alt="DOLLAR ICON" />
+          </div>
+        </div>
+      </section>
+      <section class="selections">
+        <div class="label-con">
+          <label> Select Tip </label>
+          <p id="error-msg2" class="error"></p>
+        </div>
+        <div class="tip-grid">
+          <button value="5">5%</button>
+          <button value="10">10%</button>
+          <button value="15">15%</button>
+          <button value="25">25%</button>
+          <button value="50">50%</button>
+            <input type="number" placeholder="Custom" id="custom"></input>
+        </div>
+      </section>
+      <section>
+        <div class="bill-input-con reduce">
+          <div class="label-con">
+            <label> Number of People </label>
+            <p id="error-msg3" class="error"></p>
+          </div>
+          <div class="bill-input">
+            <input type="number" placeholder="5" id="number-of-people" />
+            <img src="/images/icon-person.svg" alt="person ICON" />
+          </div>
+        </div>
+      </section>
+      </div>
+      <section class="last-section">
+        <div>
+        <div class="tip-container">
+          <div class="tip-text">
+            <div class="amount">Tip Amount</div>
+            <div class="per-person">/ person</div>
+          </div>
+          <div id="tip-price">$0.00</div>
+        </div>
+        <div class="tip-container">
+          <div class="tip-text">
+            <div class="amount">Total</div>
+            <div class="per-person">/ person</div>
+          </div>
+          <div id="price">$0.00</div>
+        </div>
+      </div>
+        <button id="get-bill">Reset</button>
+      </section>
+    </main>
+
+    <footer>
+      Challenge by 
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >  Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/CodingTimmyeth"
+        target="_blank"
+        >Tommy Miguel</a
+      >.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
